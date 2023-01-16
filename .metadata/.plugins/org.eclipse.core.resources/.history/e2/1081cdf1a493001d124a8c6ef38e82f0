@@ -1,0 +1,30 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class DesafioConversao {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.print("Digite seu primeiro salário: ");
+		double salario1 = entrada.nextDouble();
+		entrada.nextLine();
+		
+		System.out.print("Digite seu segundo salário: ");
+		double salario2 = entrada.nextDouble();
+		entrada.nextLine();
+		
+		System.out.print("Digite seu terceiro salário: ");
+		double salario3 = entrada.nextDouble();
+		entrada.nextLine();
+		
+		double soma = salario1 + salario2 + salario3;
+		System.out.println("A média dos últimmos salários desse funcionário é: " + soma / 2);
+		
+		entrada.close();
+		
+		
+	}
+}
