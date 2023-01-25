@@ -1,0 +1,32 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class DesafioCalculadora {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Digite o primeiro numero: ");
+		double num1 = entrada.nextDouble();
+		entrada.nextLine();
+		
+		System.out.println("Digite o sinal da operação ( + , - , * , / ): ");
+		String sinal = entrada.next();
+		
+		System.out.println("Digite o segundo numero: ");
+		double num2 = entrada.nextDouble();
+		
+		String resultado = "";
+		
+		boolean soma = sinal.equals("+");
+		resultado = soma ? Double.toString(num1 + num2) : resultado;
+		
+		System.out.println("O resultado da operação é: " + resultado);
+		
+				
+		
+		entrada.close(); 
+	}
+}
